@@ -16,8 +16,8 @@ const App = () => {
             await fetch('https://jsonplaceholder.typicode.com/users/')
                 .then((response) => response.json())
                 .then((json) => {
-                   return json.map((contact) => {
-                        data.push({
+                    json.map((contact) => {
+                       return data.push({
                             id: contact.id,
                             name: contact.name,
                             number: contact.phone,
@@ -28,7 +28,7 @@ const App = () => {
             dispatch({ type: 'FETCH_CONTACTS', payload: data });
         };
         promise();
-    }, []);
+    }, [dispatch]);
 
 
     return (
