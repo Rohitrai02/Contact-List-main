@@ -1,4 +1,4 @@
-# Project Link: https://silver-tartufo-c0cc7e.netlify.app/
+# Host Link: https://silver-tartufo-c0cc7e.netlify.app/
 
 
 # Getting Started with Create React App
